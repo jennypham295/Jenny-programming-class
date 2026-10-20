@@ -11,13 +11,11 @@ import RealityKitContent
 
 struct ContentView: View {
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    
+ 
     var body: some View {
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-            
-            Text("Hello, world!")
+            Text("Five Shapes")
+                .font(.largeTitle)
             
             Button("Show Shapes") {
                 Task {

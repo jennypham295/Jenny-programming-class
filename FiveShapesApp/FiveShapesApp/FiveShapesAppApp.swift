@@ -9,25 +9,22 @@ import SwiftUI
 
 @main
 struct FiveShapesAppApp: App {
-
     @State private var appModel = AppModel()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(appModel)
         }
-
-        ImmersiveSpace(id: appModel.immersiveSpaceID) {
+        .windowStyle(.volumetric)
+        .defaultSize(width: 0.6, height: 0.4, depth: 0.6, in: .meters)
+        
+        ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
-                .environment(appModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
         }
-        .immersionStyle(selection: .constant(.full), in: .full)
     }
+}
+
+#Preview(immersionStyle: .full) {
+    ImmersiveView()
+        .environment(AppModel())
 }

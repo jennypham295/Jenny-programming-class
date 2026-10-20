@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		926A2A2F3061C8D5008DC68B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 926A2A2E3061C8D5008DC68B /* RealityKitContent */; };
+		92748F803087D289003E069B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 92748F7F3087D289003E069B /* RealityKitContent */; };
+		92748F823087D2DF003E069B /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = 92748F813087D2DF003E069B /* RealityKitContent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		926A2A293061C8D5008DC68B /* FiveShapesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveShapesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		926A2A2D3061C8D5008DC68B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		926A2A3D3061C8DA008DC68B /* FiveShapesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveShapesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92748F813087D2DF003E069B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RealityKitContent; path = "/Users/pham295/Desktop/Jenny-programming-class/FiveShapesApp/RealityKitContent"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92748F803087D289003E069B /* RealityKitContent in Frameworks */,
 				926A2A2F3061C8D5008DC68B /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				926A2A2B3061C8D5008DC68B /* FiveShapesApp */,
-				926A2A2C3061C8D5008DC68B /* Packages */,
 				926A2A403061C8DA008DC68B /* FiveShapesAppTests */,
 				926A2A2A3061C8D5008DC68B /* Products */,
+				92748F813087D2DF003E069B /* RealityKitContent */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +91,6 @@
 				926A2A3D3061C8DA008DC68B /* FiveShapesAppTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		926A2A2C3061C8D5008DC68B /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				926A2A2D3061C8D5008DC68B /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +114,7 @@
 			name = FiveShapesApp;
 			packageProductDependencies = (
 				926A2A2E3061C8D5008DC68B /* RealityKitContent */,
+				92748F7F3087D289003E069B /* RealityKitContent */,
 			);
 			productName = FiveShapesApp;
 			productReference = 926A2A293061C8D5008DC68B /* FiveShapesApp.app */;
@@ -155,7 +151,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
-				LastUpgradeCheck = 2660;
+				LastUpgradeCheck = 2710;
 				TargetAttributes = {
 					926A2A283061C8D5008DC68B = {
 						CreatedOnToolsVersion = 26.6;
@@ -175,6 +171,9 @@
 			);
 			mainGroup = 926A2A203061C8D5008DC68B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				92748F7E3087D289003E069B /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 926A2A2A3061C8D5008DC68B /* Products */;
 			projectDirPath = "";
@@ -191,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92748F823087D2DF003E069B /* RealityKitContent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +342,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				XROS_DEPLOYMENT_TARGET = 26.5;
@@ -398,6 +399,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 				XROS_DEPLOYMENT_TARGET = 26.5;
@@ -480,8 +482,19 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		92748F7E3087D289003E069B /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		926A2A2E3061C8D5008DC68B /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		92748F7F3087D289003E069B /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
 		};
